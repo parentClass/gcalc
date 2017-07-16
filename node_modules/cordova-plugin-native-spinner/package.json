@@ -1,0 +1,83 @@
+{
+  "name": "cordova-plugin-native-spinner",
+  "version": "1.0.8",
+  "description": "A Cordova plugin for showing a progress indicator based on Paldom/SpinnerDialog",
+  "author": {
+    "name": "Aleksandr Filatov"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greybax/cordova-plugin-native-spinner.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-native-spinner",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "spinner",
+    "dialog",
+    "spinnerdialog",
+    "progress",
+    "indicator",
+    "native",
+    "progressindicator",
+    "plugin",
+    "notification",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-windows",
+    "android",
+    "ios",
+    "wp8",
+    "windows",
+    "10",
+    "8.1",
+    "phone"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/greybax/cordova-plugin-native-spinner/issues"
+  },
+  "gitHead": "644cd2a96cd96eb9afd240cf4f861f88e2e81a7e",
+  "homepage": "https://github.com/greybax/cordova-plugin-native-spinner#readme",
+  "_id": "cordova-plugin-native-spinner@1.0.8",
+  "scripts": {},
+  "_shasum": "1b45800e12faf2c2b677409cacf1f502914529b4",
+  "_from": "cordova-plugin-native-spinner@latest",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.10.2",
+  "_npmUser": {
+    "name": "greybax",
+    "email": "greybax@gmail.com"
+  },
+  "dist": {
+    "shasum": "1b45800e12faf2c2b677409cacf1f502914529b4",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-native-spinner/-/cordova-plugin-native-spinner-1.0.8.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "greybax",
+      "email": "greybax@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-native-spinner-1.0.8.tgz_1492458129093_0.8808177683968097"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-native-spinner/-/cordova-plugin-native-spinner-1.0.8.tgz"
+}

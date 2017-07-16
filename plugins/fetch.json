@@ -6,5 +6,45 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-spinner": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-spinner@^1.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.greybax.spinnerdialog": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-native-spinner"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-fullscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-fullscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar@2.2.3"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Playball|Lobster');
-
 
 *{
     margin:0;
@@ -7,11 +5,26 @@
 }
 
 .brand{
-    font-family: 'Lobster', cursive;
+    font-family: 'Bungee Shade', cursive;
 }
 
 .container{
-    margin-top: 20%;
+    margin-top: 30%;
+}
+
+.sign-btn{
+    text-transform: none;
+    background-color: #ef473a;
+    width: 100%l
+}
+
+.signup-link{
+    margin-top: 5% !important;
+}
+
+ul li{
+    display: inline;
+    padding: 2%;
 }
 
 /*****************
