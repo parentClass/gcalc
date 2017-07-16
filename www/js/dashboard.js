@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$('.name').text(window.localStorage.getItem('username'));
 
 			for(var i = 0; i < Object.keys(data).length; i++){
-				container.append("<div class='col s12 card' style='background-color:#"+colors[i]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: 10/10</p></div></div>");
+				container.append("<div class='card' style='background-color:#"+colors[Math.floor((Math.random()*19)+1)]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: 10/10</p></div></div>");
 			}
 
         },
