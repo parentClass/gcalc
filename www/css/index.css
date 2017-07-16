@@ -1,0 +1,43 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.brand{
+    font-family: 'Bungee Shade', cursive;
+}
+
+.container{
+    margin-top: 30%;
+}
+
+.sign-btn{
+    text-transform: none;
+    background-color: #ef473a;
+}
+
+.signup-link{
+    margin-top: 5% !important;
+}
+
+ul li{
+    display: inline;
+    padding: 2%;
+}
+
+/*****************
+    Custom Gradients -> uigradients.com
+    **************/
+
+.pacific-dream{
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.firewatch{
+    background: #cb2d3e !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
