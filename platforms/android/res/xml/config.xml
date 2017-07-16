@@ -20,12 +20,12 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <name>gCalc</name>
+    <name>GCALC</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Application that will help you get aware of your failing grades.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Bored Developers
     </author>
     <content src="index.html" />
     <access origin="*" />

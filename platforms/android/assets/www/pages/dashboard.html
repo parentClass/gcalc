@@ -2,7 +2,7 @@
   <html>
     <head>
       <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Roboto|Material+Icons|Lobster|Playball|Merienda+One|Galada|Bungee+Shade" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Roboto|Material+Icons|Lobster|Playball|Merienda+One|Galada|Bungee+Shade|Lato" rel="stylesheet">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
@@ -12,38 +12,32 @@
       <title>gCalc</title>
     </head>
     <body>
-      <div class="container">
-        <h1>Welcome!</h1>
-      </div>
-       <footer class="page-footer transparent">
-         <div class="container">
-             <div class="row">
-                <div class="col s12 center">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/BoredStudentStudio" class="white-text">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/parentClass/gcalc" class="white-text">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s12">
-                    <h6 class="center">
-                        <small>
-                             ©2016-2017 Bored Developers, All Rights Reserved.
-                        </small>
-                    </h6>
-                </div>
-             </div>
-         </div>
-         </footer>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">gCalc</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav" id="mobile-demo">
+          <li><div class="user-view">
+              <div class="background">
+                <img src="../img/firewatch.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="../img/default_avatar.png"></a>
+              <a href="#!name"><span class="white-text name">Lorem Ipsum</span></a>
+              <a href="#!email"><span class="white-text email">lorem@ipsum.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">functions</i>Calculate Grade</a></li>
+            <li><a href="#!"><i class="material-icons">archive</i>Add Subject</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!"><i class="material-icons">mail</i>Send feedback</a></li>
+            <li><a href="#!"><i class="material-icons">local_cafe</i>Send a coffee</a></li>
+            <li><a href="#!"><i class="material-icons">close</i>Sign-out!</a></li>
+          </ul>
+        </div>
+      </nav>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="../js/dashboard.js"></script>
     </body>
   </html>
