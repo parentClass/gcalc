@@ -22,11 +22,11 @@
                 <img src="../img/firewatch.jpg">
               </div>
               <a href="#!user"><img class="circle" src="../img/default_avatar.png"></a>
-              <a href="#!name"><span class="white-text name">Lorem Ipsum</span></a>
+              <a href="#!name"><span class="white-text name"></span></a>
               <a href="#!email"><span class="white-text email">lorem@ipsum.com</span></a>
             </div></li>
-            <li><a href="#!"><i class="material-icons">functions</i>Calculate Grade</a></li>
-            <li><a href="#!"><i class="material-icons">archive</i>Add Subject</a></li>
+            <li><a href="#sem-modal" class="calculate-semester"><i class="material-icons">functions</i>Takedown Subject Grade</a></li>
+            <li><a href="#!"><i class="material-icons">pageview</i>View Subject Grades</a></li>
             <li><div class="divider"></div></li>
             <li><a href="#!"><i class="material-icons">mail</i>Send feedback</a></li>
             <li><a href="#!"><i class="material-icons">local_cafe</i>Send a coffee</a></li>
@@ -34,10 +34,61 @@
           </ul>
         </div>
       </nav>
+
+      <div class="row">
+        <div class="card-container">
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+        <div id="sem-modal" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Takedown GPA Grade</h4>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="subject_code" type="text" class="validate">
+                    <label for="subject_code">Subject Code</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="subject_title" type="text" class="validate">
+                    <label for="subject_title">Subject Title</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="subject_description" type="text" class="validate">
+                    <label for="subject_description">Subject Description</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="subject_grade" type="number" class="validate">
+                    <label for="subject_grade">Grade</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="subject_units" type="number" class="validate">
+                    <label for="subject_units">Units</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="subject_note" class="materialize-textarea"></textarea>
+                    <label for="subject_note">Note:</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat takedown">Submit</a>
+          </div>
+        </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
-      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="../cordova.js"></script>
       <script type="text/javascript" src="../js/dashboard.js"></script>
     </body>
   </html>

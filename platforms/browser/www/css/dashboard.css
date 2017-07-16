@@ -43,9 +43,7 @@ ul li{
 }
 
 #note{
-	font-size: 14px;
-	font-family: 'Lato', cursive;
-	text-indent: 15px;
+	text-decoration: underline;
 }
 
 #desc{

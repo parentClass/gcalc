@@ -5,7 +5,6 @@ $(document).ready(function(){
    $(".sign-btn").on("click",function(){
 
         var options = { dimBackground: true };
-
         SpinnerPlugin.activityStart("Patience please ...", options);
 
         var username = $("#username").val();

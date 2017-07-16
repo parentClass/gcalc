@@ -1,23 +1,11 @@
 $(document).ready(function(){
-	var colors = ['ef5350','ec407a','ab47bc','7e57c2'
-					,'5c6bc0','42a5f5','29b6f6','26c6da','26a69a','66bb6a'
-					,'9ccc65','d4e157','ffee58','ffca28','ffa726','ff7043'
-					,'8d6e63','bdbdbd','78909c'];
 
 	$.ajax({
         type: "GET",
-        url: "https://photopost.000webhostapp.com/api.gcalc/api.gcalc/"+
-        		"src/public/api/v1/retrieve_grades/" + window.localStorage.getItem('username'),
+        url: "https://photopost.000webhostapp.com/api.gcalc/api.gcalc/src/public/api/v1/retrieve_grades/daniels",
         success : function(data){
             var data = JSON.parse(data);
-			var container = $('.card-container');
-
-			$('.name').text(window.localStorage.getItem('username'));
-
-			for(var i = 0; i < Object.keys(data).length; i++){
-				container.append("<div class='col s12 card' style='background-color:#"+colors[i]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: 10/10</p></div></div>");
-			}
-
+			console.log(data);
         },
         error : function(jqXHR, textStatus, errorThrown){
             alert(jqXHR + " " + textStatus + " " + errorThrown);
