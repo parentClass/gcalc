@@ -25,8 +25,8 @@
               <a href="#!name"><span class="white-text name">Lorem Ipsum</span></a>
               <a href="#!email"><span class="white-text email">lorem@ipsum.com</span></a>
             </div></li>
-            <li><a href="#!"><i class="material-icons">functions</i>Calculate Grade</a></li>
-            <li><a href="#!"><i class="material-icons">archive</i>Add Subject</a></li>
+            <li><a href="#sem-modal" class="calculate-semester"><i class="material-icons">functions</i>Calculate Subject Grade</a></li>
+            <li><a href="#!"><i class="material-icons">pageview</i>View Subject Grades</a></li>
             <li><div class="divider"></div></li>
             <li><a href="#!"><i class="material-icons">mail</i>Send feedback</a></li>
             <li><a href="#!"><i class="material-icons">local_cafe</i>Send a coffee</a></li>
@@ -34,6 +34,76 @@
           </ul>
         </div>
       </nav>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <code class="right">A+ 4.0</code><br/>
+                <small>CS 101 - Introduction to Computer Science</small>
+              </span>
+              <p>
+                No subject description given to this subject. Just adding this text to keep the design cool and relaxed.
+              </p><br/>
+              <p id="note">
+                Note: Always strive for the best and be on top no matter what happen.
+              </p>
+            </div>
+            <div class="card-action">
+              <p class="center white-text">
+                Proficiency: 10/10
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+        <div id="sem-modal" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Calculate GPA Grade</h4>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="subject_code" type="text" class="validate">
+                    <label for="subject_code">Subject Code</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="subject_title" type="text" class="validate">
+                    <label for="subject_title">Subject Title</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="subject_description" type="text" class="validate">
+                    <label for="subject_description">Subject Description</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="subject_grade" type="number" class="validate">
+                    <label for="subject_grade">Grade</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="subject_units" type="number" class="validate">
+                    <label for="subject_units">Units</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="subject_note" class="materialize-textarea"></textarea>
+                    <label for="subject_note">Note:</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Calculate</a>
+          </div>
+        </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
