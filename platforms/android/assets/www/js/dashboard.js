@@ -14,8 +14,30 @@ $(document).ready(function(){
 
 			$('.name').text(window.localStorage.getItem('username'));
 
+			var proficiency = 0;
+
 			for(var i = 0; i < Object.keys(data).length; i++){
-				container.append("<div class='col s12 card' style='background-color:#"+colors[Math.floor((Math.random()*19)+1)]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: 10/10</p></div></div>");
+				if(data[i]['number_grade'] >= 1.0 || data[i]['number_grade'] <= 1.25){
+					proficiency = 10;
+				}else if(data[i]['number_grade'] >= 1.25 || data[i]['number_grade'] <= 1.50){
+					proficiency = 9;
+				}else if(data[i]['number_grade'] >= 1.50 || data[i]['number_grade'] <= 1.75){
+					proficiency = 8;
+				}else if(data[i]['number_grade'] >= 1.75 || data[i]['number_grade'] <= 2.00){
+					proficiency = 7;
+				}else if(data[i]['number_grade'] >= 2.00 || data[i]['number_grade'] <= 2.25){
+					proficiency = 6;
+				}else if(data[i]['number_grade'] >= 2.25 || data[i]['number_grade'] <= 2.50){
+					proficiency = 5;
+				}else if(data[i]['number_grade'] >= 2.50 || data[i]['number_grade'] <= 2.75){
+					proficiency = 4;
+				}else if(data[i]['number_grade'] >= 2.75 || data[i]['number_grade'] <= 3.00){
+					proficiency = 3;
+				}else{
+					proficiency = 1;
+				}
+				
+				container.append("<div class='card' style='background-color:#"+colors[Math.floor((Math.random()*19)+1)]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: " + proficiency + "/10</p></div></div>");
 			}
 
         },
