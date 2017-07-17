@@ -56,3 +56,11 @@ ul li{
 	font-size: 14px;
 	text-align: center !important;
 }
+
+.code{
+	font-size: 20px;
+}
+
+.suggest{
+	text-indent: 15px;
+}
