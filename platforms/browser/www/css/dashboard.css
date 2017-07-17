@@ -39,13 +39,20 @@ ul li{
 
 .card{
 	background-color: #ff3232;
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 }
 
 #note{
-	text-decoration: underline;
+	font-size: 14px;
+	font-family: 'Lato', cursive;
+	text-indent: 15px;
 }
 
 #desc{
 	text-indent: 15px;
+}
+
+.title{
+	font-size: 14px;
+	text-align: center !important;
 }
