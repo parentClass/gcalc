@@ -2,7 +2,7 @@ $(document).ready(function(){
 	if(window.localStorage.getItem('isLoggedIn') == 1){
 		var colors = ['ef5350','ec407a','ab47bc','7e57c2'
 					,'5c6bc0','42a5f5','29b6f6','26c6da','26a69a','66bb6a'
-					,'9ccc65','d4e157','ffee58','ffca28','ffa726','ff7043'
+					,'9ccc65','d4e157','ffca28','ffa726','ff7043'
 					,'8d6e63','bdbdbd','78909c'];
 
 		$.ajax({
@@ -38,7 +38,7 @@ $(document).ready(function(){
 										"about this subject. Don't forget to smile and aim more.";
 					}else if(data[i]['number_grade'] >= 2.25 && data[i]['number_grade'] <= 2.50){
 						proficiency = 5;
-						suggestion = "Proficiency in this subject is half met time for you to step up your understanding about this subject. This might help you " +
+						suggestion = "Proficiency in this subject is half met time for you to step up your understanding about this subject. This might help you in " +
 										"<a href='https://www.google.com.ph/search?q="+ data[i]['subject_title']+"+Advance'>"+ data[i]['subject_title'] +"</a>. Good luck!";
 					}else if(data[i]['number_grade'] >= 2.50 && data[i]['number_grade'] <= 2.75){
 						proficiency = 4;
@@ -57,7 +57,7 @@ $(document).ready(function(){
 
 					console.log(data[i]['number_grade']);
 
-					container.append("<div class='card' style='background-color:#"+colors[Math.floor((Math.random()*19)+1)]+";'><div class='card-content white-text'><span class='card-title'><span class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</span><br/><div class='title center'><span class='code'>" + data[i]['subject_code'] + "</span><br/>" + toTitleCase(data[i]['subject_title']) + "</div></span><div class='center'><p id='desc'>" + data[i]['subject_description'] + "</div><br/>Note:<p id='note'>" + data[i]['note'] + "</p><p>Suggestion: <br/><div class='suggest'>" + suggestion + "</div></p></div><div class='card-action'><p class='center white-text'>Proficiency: " + proficiency + "/10</p></div></div>");
+					container.append("<div class='card' style='background-color:#"+colors[Math.floor((Math.random()*18)+1)]+";'><div class='card-content white-text'><span class='card-title'><span class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</span><br/><div class='title center'><span class='code'>" + data[i]['subject_code'] + "</span><br/>" + toTitleCase(data[i]['subject_title']) + "</div></span><div class='center'><p id='desc'>" + data[i]['subject_description'] + "</div><br/>Note:<p id='note'>" + data[i]['note'] + "</p><br/><p>Suggestion: <br/><div class='suggest'>" + suggestion + "</div></p></div><div class='card-action'><p class='center white-text'>Proficiency: " + proficiency + "/10</p></div></div>");
 				}
 
 	        },

@@ -16,7 +16,7 @@ $(document).ready(function(){
             data: "username=" + username + "&passkey=" + password,
             success : function(data){
                 var data = JSON.parse(data);
-
+                
                 SpinnerPlugin.activityStop();
 
                 if(data[0]['is_valid']){
