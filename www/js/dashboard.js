@@ -36,7 +36,7 @@ $(document).ready(function(){
 				}else{
 					proficiency = 1;
 				}
-				
+
 				container.append("<div class='card' style='background-color:#"+colors[Math.floor((Math.random()*19)+1)]+";'><div class='card-content white-text'><span class='card-title'><code class='right'>"+ data[i]['letter_grade'] + " " + data[i]['number_grade'] + "</code><br/><small>" + data[i]['subject_code'] + "</small><br/><small>" + data[i]['subject_title'] + "</small></span><p id='desc'>" + data[i]['subject_description'] + "</p><br/>Note:<p id='note'>" + data[i]['note'] + "</p></div><div class='card-action'><p class='center white-text'>Proficiency: " + proficiency + "/10</p></div></div>");
 			}
 
@@ -75,5 +75,11 @@ $(document).ready(function(){
                 alert(JSON.parse(jqXHR));
             }
         });
+	});
+
+	$('.sign-out').on('click',function(){
+		window.localStorage.removeItem('username');
+		window.localStorage.removeItem('isLoggedIn');
+		window.location='../index.html';
 	});
 });
